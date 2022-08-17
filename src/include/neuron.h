@@ -41,7 +41,7 @@ class Neuron{
       //make random number
       static double Random(){
         //make random number between -1 to 1
-        return ((double)(rand() % 1000000) / 10000000000 );
+        return ((double)(rand() % 1000000) / 100000000 );
       }
 
 

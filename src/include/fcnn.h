@@ -11,11 +11,18 @@ class FCNN{
 
     double TError;
 
+    bool Softmax;
+
     //basic constructor
     FCNN(){
         //get unix time as bases for Random
         srand(time(0));
+
+        //set total error
         this->TError = 0;
+
+        //should this network return a softmax function
+        this->Softmax = false;
     }
 
     //generate new network with given paramaters
